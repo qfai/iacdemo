@@ -12,9 +12,15 @@ locals {
       properties = {
         routes = [
           {
+            name = "default"
             properties = {
               addressPrefix    = "0.0.0.0/0",
               nextHopIpAddress = var.defaultGateway
+              ipConfigurationReferences = [
+                {
+                  ID = "/subscriptions/de3c4d5e-af08-451a-a873-438d86ab6f4b/resourceGroups/iacado-rg/providers/Microsoft.AzureStackHCI/networkInterfaces/iacado-vm-nic"
+                }
+              ]
             }
           }
         ]
