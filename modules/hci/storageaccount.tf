@@ -3,5 +3,5 @@ resource "azurerm_storage_account" "witness" {
   location                 = var.resourceGroup.location
   resource_group_name      = var.resourceGroup.name
   account_tier             = "Standard"
-  account_replication_type = "LRS"
+  account_replication_type = "ZRS"
 }

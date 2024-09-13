@@ -12,7 +12,6 @@ locals {
       properties = {
         routes = [
           {
-            name = "default"
             properties = {
               addressPrefix    = "0.0.0.0/0",
               nextHopIpAddress = var.defaultGateway
