@@ -24,6 +24,9 @@ resource "azapi_resource" "connectedCluster" {
       provisioningState         = null
       infrastructure            = null
       distribution              = null
+      arcAgentProfile           = {
+        agentAutoUpgrade = "Enabled"
+      }
     }
   }
 
